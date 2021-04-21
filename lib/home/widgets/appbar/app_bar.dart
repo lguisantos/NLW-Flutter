@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:nlw/core/app_gradients.dart';
 import 'package:nlw/core/app_text_styles.dart';
+import 'package:nlw/home/widgets/scorebar/score_bar.dart';
 
 //Criando app_bar personalizada
-class AppBarWiget extends PreferredSize {
-  AppBarWiget()
+class AppBarWidget extends PreferredSize {
+  AppBarWidget()
       : super(
-            preferredSize: Size.fromHeight(250),
-            child: Container(
-                height: 250,
-                decoration: BoxDecoration(gradient: AppGradients.linear),
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 25),
+          preferredSize: Size.fromHeight(250),
+          child: Container(
+            height: 250,
+            child: Stack(
+              children: [
+                Container(
+                  height: 161,
+                  width: double.maxFinite,
+                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  decoration: BoxDecoration(gradient: AppGradients.linear),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -38,5 +43,13 @@ class AppBarWiget extends PreferredSize {
                       )
                     ],
                   ),
-                )));
+                ),
+                Align(
+                  alignment: Alignment(0.0, 1.0),
+                  child: ScoreCardWidget(),
+                ),
+              ],
+            ),
+          ),
+        );
 }
