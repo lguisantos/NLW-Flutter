@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'core/app_widget.dart';
+import 'package:nlw/home/home_page.dart';
 
 void main() {
-  runApp(
-    AppWidget(),
-  );
+  runApp(MaterialApp(
+    home: HomePage(),
+  ));
 }
