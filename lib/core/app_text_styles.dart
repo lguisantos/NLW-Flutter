@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'app_colors.dart';
 
 class AppTextStyles {
@@ -51,6 +50,7 @@ class AppTextStyles {
     fontSize: 13,
     fontWeight: FontWeight.normal,
   );
+  
   static final TextStyle bodyDarkGreen = GoogleFonts.notoSans(
     color: AppColors.darkGreen,
     fontSize: 13,
@@ -68,6 +68,7 @@ class AppTextStyles {
     fontSize: 20,
     fontWeight: FontWeight.normal,
   );
+ 
   static final TextStyle bodyLightGrey20 = GoogleFonts.notoSans(
     color: AppColors.lightGrey,
     fontSize: 20,
@@ -79,6 +80,7 @@ class AppTextStyles {
     fontSize: 20,
     fontWeight: FontWeight.normal,
   );
+  
   static final TextStyle body11 = GoogleFonts.notoSans(
     color: AppColors.grey,
     fontSize: 11,
